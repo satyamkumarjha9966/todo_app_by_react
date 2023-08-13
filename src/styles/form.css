@@ -1,0 +1,41 @@
+#formparent{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    gap: 10px;
+    background-color: rgb(173, 171, 171);
+    text-align: center;
+    color: white;
+}
+
+#form button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+#form *{
+    height: 45px;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#form textarea{
+    height: 70px;
+}
