@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
-import BlogCard from '../components/BlogCard';
-import '../styles/homepage.css';
+import React, { useState } from "react";
+import BlogCard from "../components/BlogCard";
+import "../styles/homepage.css";
 
-function HomePage(props) {
-  
+function HomePage({ blogData = [], setBlogData }) {
   return (
     <div>
-        <div id='blogp4arent'>
-            {
-                props.blogData.map((e) => {
-                return <BlogCard title={e.title} img={e.img} description={e.desc} />
-            })
-            }
-        </div>
+      <div id="blogp4arent">
+        {blogData?.map((e, i) => {
+          return (
+            <BlogCard
+              title={e.title}
+              img={e.img}
+              description={e.desc}
+              id={i}
+              setBlogData={setBlogData}
+              blogData={blogData}
+            />
+          );
+        })}
+      </div>
     </div>
-  )
+  );
 }
 
 export default HomePage;

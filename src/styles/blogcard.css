@@ -17,10 +17,12 @@
 
 .blogcard h1{
     font-size: 18px;
+    overflow: hidden;
 }
 
 .blogcard p{
     font-size: 14px;
+    overflow: hidden;
 }
 
 .blogcard button{
